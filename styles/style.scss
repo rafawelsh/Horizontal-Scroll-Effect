@@ -1,0 +1,82 @@
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: inline-block;
+}
+body {
+    min-height: 100vh;
+}
+
+nav {
+    .flexed {
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-evenly;
+    }
+    
+    ul {
+        
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+.horizontal-section-1 {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+
+    .horizontal-scroll-container-2 {
+        height: 0px;   /*depends on height of contents*/
+        position: relative;
+        width: 100%;
+        background: linear-gradient(to right, #e66465, #9198e5);
+
+        .horizontal-scroll-sticky-3 {
+            position: sticky;
+            top: 0;   /* can be changed to 30px allow a sticky h1 above*/
+            height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+      
+            .horizontal-scroll-content-4 {
+                transform: translateX(0px); /*update this with JS*/
+                position: absolute;
+                height: 100%;
+                will-change: transform;
+
+                .cards-container-5 {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0 0 0 150px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .card-6 {
+                        box-sizing: inline-block;
+                        position: relative;
+                        height: 80%;
+                        width: 80%;
+                        background-color: #111f30;
+                        margin-right: 75px;
+                        flex-shrink: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 2rem;
+                    
+                        .card-6 > * {
+                            padding : 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

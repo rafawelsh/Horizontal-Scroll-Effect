@@ -1,0 +1,112 @@
+* {
+  padding: 0 auto;
+  margin: 0 auto;
+  -webkit-box-sizing: inline-block;
+          box-sizing: inline-block;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav .flexed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.horizontal-section-1 {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 {
+  height: 0px;
+  /*depends on height of contents*/
+  position: relative;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#e66465), to(#9198e5));
+  background: linear-gradient(to right, #e66465, #9198e5);
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 .horizontal-scroll-sticky-3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* can be changed to 30px allow a sticky h1 above*/
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 .horizontal-scroll-sticky-3 .horizontal-scroll-content-4 {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  /*update this with JS*/
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 .horizontal-scroll-sticky-3 .horizontal-scroll-content-4 .cards-container-5 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 0 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 .horizontal-scroll-sticky-3 .horizontal-scroll-content-4 .cards-container-5 .card-6 {
+  -webkit-box-sizing: inline-block;
+          box-sizing: inline-block;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  background-color: #111f30;
+  margin-right: 75px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+}
+
+.horizontal-section-1 .horizontal-scroll-container-2 .horizontal-scroll-sticky-3 .horizontal-scroll-content-4 .cards-container-5 .card-6 .card-6 > * {
+  padding: 0px;
+}
+/*# sourceMappingURL=style.css.map */
